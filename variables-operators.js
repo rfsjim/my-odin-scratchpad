@@ -16,3 +16,27 @@ function addIndefiniteNumber(...numbers)
     return numbers
         .reduce((sum, current) => sum + current, 0)
 }
+
+// Add Seven
+function add7(number)
+{
+    return number + 7
+}
+
+// Multiply
+function multiply(a, b)
+{
+    return a * b
+}
+
+// Capitalise
+function capitalise(string)
+{
+    return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase()
+}
+
+// Last Letter
+function lastLetter(string)
+{
+    return string.at(-1)
+}
