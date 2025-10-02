@@ -15,8 +15,18 @@
 
 function unique(arr)
 {
-    return arr
-        .map((element, index) => {
-            if (element )
-        })
+    let returnedArray = [];
+
+    // iterate through arr
+    // if current element is in returnedArray do nothing
+    // otherwise put current element into returnedArray
+
+    arr.forEach(element => {
+        if (!returnedArray.includes(element))
+        {
+            returnedArray.push(element);
+        }
+    });
+
+    return returnedArray
 }
