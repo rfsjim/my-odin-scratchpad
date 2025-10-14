@@ -36,3 +36,41 @@ p.textContent = "ME TOO!";
 blackPinkDiv.appendChild(p);
 
 container.appendChild(blackPinkDiv);
+
+const btn = document.querySelector("#btn");
+btn.onclick = () => alert("Hello World from onclick event");
+
+const btntoo = document.querySelector("#btntoo");
+btntoo.addEventListener("click", () => {
+    alert("Hello World from Event Listener");
+});
+
+function alertFunction()
+{
+    alert("Yay! You did it!!");
+}
+
+const bum = document.querySelector("#bum");
+
+bum.onclick = alertFunction;
+bum.addEventListener("click", alertFunction);
+bum.addEventListener("click", function (e) {
+    console.log(e);
+});
+bum.addEventListener("click", function (e) {
+    console.log(e.target);
+});
+bum.addEventListener("click", function (e) {
+    e.target.style.background = "blue";
+});
+
+const buttons = document.querySelectorAll("#btnContainer > button");
+
+buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+        alert(button.id);
+    });
+    button.addEventListener("click", function (e) {
+        e.target.style.background = "purple";
+    });
+});
