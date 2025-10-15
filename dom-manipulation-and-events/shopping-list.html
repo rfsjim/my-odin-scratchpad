@@ -31,7 +31,36 @@
     </ul>
 
     <script>
+        const button = document.querySelector("button");
+        button.addEventListener("click", addShoppingListItem);
+        
+        function addShoppingListItem()
+        {
+            preventDefault();
 
+            const itemInput = document.querySelector("#item");
+            const item = itemInput.value;
+            itemInput.value = "";
+
+            const li = document.createElement("li");
+            const span = document.createElement("span");
+            const btn = document.createElement("button");
+
+            li.appendChild(span);
+            li.appendChild(btn);
+
+            span.textContent = item;
+            btn.textContent = "Delete";
+
+            document.querySelector("ul").appendChild(li);
+
+            const deleteButton = document.querySelector("li > button");
+        deleteButton.addEventListener("click", (e) => {
+            e.target.style.background = "blue";
+        });
+
+        button.focus();
+        }
     </script>
   </body>
 </html>
