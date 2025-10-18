@@ -18,7 +18,7 @@ alert(arr[2].name); // Pete
 
 /**
  * Sorts array of objects by age of users 
- * @param {object} arr
+ * @param {object []} arr
  */
 function sortByAge(arr)
 {
