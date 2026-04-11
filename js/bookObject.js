@@ -22,5 +22,5 @@ function Book(title, author, pageCount, hasBeenRead) {
     this.info = function() {
         // "The Hobbit by J.R.R. Tolkien, 295 pages, not read yet
         return `${title} by ${author}, ${pageCount} pages, read yet ${hasBeenRead}`;
-    }
+    };
 }
