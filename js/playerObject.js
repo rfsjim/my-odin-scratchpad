@@ -62,8 +62,8 @@ const player2 = new Player("Not Steve", "O");
 console.log(player1.sayName());
 console.log(player2.sayName());
 
-console.log(player1.getMarker);
-console.log(player2.getMarker);
+console.log(player1.getMarker());
+console.log(player2.getMarker());
 
 Object.getPrototypeOf(player1) === Player.prototype;
 Object.getPrototypeOf(player2) === Player.prototype;
